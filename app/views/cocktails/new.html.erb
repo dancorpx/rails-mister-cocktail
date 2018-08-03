@@ -9,9 +9,11 @@
 
       <%= simple_form_for @cocktail do |f| %>
         <br>
-        <%= f.input :name %>
+        <div class="text-center">
+        <%= f.input :name, label: 'Name:' %>
         <br>
         <%= f.button :submit, class: 'btn btn-primary' %>
+        </div>
       <% end %>
 
     </div>
